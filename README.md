@@ -17,6 +17,8 @@
   </tr>
 </table>
 
+<hr/>
+
 ## Before You Start
 
 Before you get started, you should have already received requests for following information via email:
@@ -29,26 +31,35 @@ Before you get started, you should have already received requests for following 
 
 *Make sure your contact at 605 already has this information before you submit a PR.*
 
+<hr/>
+
 ## Homework Goals
 
-The purpose of this exercise is to create the automation to set up as much of a production ready setup as possible for a simple web app.  
+The purpose of this exercise is to create the automation to set up as much of a production ready setup as possible for a simple web app.  This exercise, like most things in real life, is at least a little bit time-sensitive.  You will need to make decisions about what to concentrate on, and what to let slide.  Please document the choices you make.
 
-This exercise, like most things in real life, is at least a little bit time-sensitive.  You will need to make decisions about what to concentrate on, and what to let slide.  Please document the choices you make.
+<hr/>
 
 ## Deliverables
 
-1. All automation to set up the infrastructure
-1. Instructions on how to run it
-1. README documenting your choices, including choices you had to make due to time pressure, deviations from best practice or production set up, a description of the set up, and anything else you think would be good to know.
-1. The time spent
+Your entire solution should be under source control with reasonable commit messages and structure so that we can get a sense of the time spent.  In other words, don't give us a tarball, don't commit everything in one big push, don't use 2 letter commit messages, etc.  Document everything that you would normally document in day to day work. More specifically, we expect something like this:
 
-The entire solution should be under source control with reasonable commit messages and structure so that we can get a sense of the time spent.  In other words, don't give us a tarball, don't commit everything in one big push, don't use 2 letter commit messages, etc.
+1. All automation to set up the infrastructure
+1. Instructions on how to run your automation
+1. Actual time spent, maybe some discussion about what happened if this differs from your first estimate
+1. README documenting your approach and choices, including
+    * Choices you had to make due to time pressure
+    * Known deviations from best practice or real production setup
+    * Description of the setup, why you chose the technologies used in your stack
+    * Anything else you think would be good to know
+
+<hr/>
 
 ## The Actual Exercise
 
 Please deploy the Airflow web app (i.e. no need for the scheduler or flower components) together with its necessary dependencies, of a postgres database and redis server.  
 
-* Versions used, and manner of deployment are up to you.  
+* Versions used are up to you.  
+* Manner of deployment, so long as it's automated, is up to you.
 * Airflow is a python based app. You can find it on github [here](https://github.com/apache/incubator-airflow).
 * Imagine that there's a risk that we'll have a lot of traffic on this site.
 
@@ -56,6 +67,7 @@ Airflow itself is not the point here - it's an example of an app that needs a da
 
 Don't worry about all the configuration, or even understanding what airflow does. The following configuration will be most relevant to you. You may or may not need this, and the values may or may not be correct for your setup - feel free to modify them.
 
+<hr/>
 
 ```
 # The SqlAlchemy connection string to the metadata database.
@@ -92,4 +104,8 @@ broker_url = redis://redis:6379/1
 celery_result_backend = db+postgresql://<rest of url here>
 ```
 
-We look forward to hearing back from you soon. And of course any questions and comments are welcome!
+<hr/>
+
+We look forward to hearing back from you soon. Further questions and comments are also welcome.
+
+**Good luck and happy hacking!**
