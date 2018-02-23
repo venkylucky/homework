@@ -25,7 +25,7 @@ Before you get started, you should have already received requests for following 
 
 1.  Your github.com username.  Candidate homework submissions should be forked from this repo, then a pull request should be submitted. We use pull requests every day to collaborate at work, and wish to conduct interviews along the same lines.  Depending on time available for our engineers, there might even be a little bit of back-and-forth traffic along the lines of questions or change requests.
 
-2. Your keybase.io username.  Please create an account if you don't already have one.  We will probably ask you to actually deploy things, and for this we'll need a way to encrypt secrets for your eyes only.
+2. Your keybase.io username.  Please create an account if you don't already have one.  We will probably ask you to actually deploy things, and for this we'll need a way to encrypt secrets for your eyes only.  If you haven't set up a Keybase account previously, once logged in, click on the "Add a PGP Key" link, and follow the instructions to either create a new key or upload your existing PGP key.
 
 3. Your best guess as to your time commitment.  We don't like partial or incomplete homework submissions, but we also understand that life happens and people are busy.  We will take your time commitment under consideration when we're evaluating your work.
 
