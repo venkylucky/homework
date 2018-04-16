@@ -3,9 +3,11 @@
   homework!
   </td>
     <td>
-        <a href=#Placeholder>Placeholder</a> |
-        <a href=#Placeholder>Placeholder</a> |
-        <a href=#Placeholder>Placeholder</a>
+        <a href=#before-you-start>Before you Start</a> |
+        <a href=#homework-goals>Homework Goals</a> |
+        <a href=#deliverables>Deliverables</a> |
+        <a href=#the-actual-exercise>Exercise</a> |
+      
     </td>
   </tr>
   <tr>
@@ -21,11 +23,11 @@
 
 ## Before You Start
 
-Before you get started, you should have already received requests for following information via email:
+Before you get started, you should have already received requests for the following information via email:
 
 1.  Your github.com username.  Candidate homework submissions should be forked from this repo, then a pull request should be submitted. We use pull requests every day to collaborate at work, and wish to conduct interviews along the same lines.  Depending on time available for our engineers, there might even be a little bit of back-and-forth traffic along the lines of questions or change requests.
 
-2. Your keybase.io username.  Please create an account if you don't already have one.  We will probably ask you to actually deploy things, and for this we'll need a way to encrypt secrets for your eyes only.  If you haven't set up a Keybase account previously, once logged in, click on the "Add a PGP Key" link, and follow the instructions to either create a new key or upload your existing PGP key.
+2. Your keybase.io username.  Please create an account if you don't already have one.  We will probably ask you to actually deploy things, and for this we'll need a way to encrypt secrets for your eyes only.  **If you haven't set up a Keybase account previously, once logged in, click on the "Add a PGP Key" link, and follow the instructions to either create a new key or upload your existing PGP key.**
 
 3. Your best guess as to your time commitment.  We don't like partial or incomplete homework submissions, but we also understand that life happens and people are busy.  We will take your time commitment under consideration when we're evaluating your work.
 
@@ -35,7 +37,7 @@ Before you get started, you should have already received requests for following 
 
 ## Homework Goals
 
-The purpose of this exercise is to create the automation to set up as much of a production ready setup as possible for a simple web app.  This exercise, like most things in real life, is at least a little bit time-sensitive.  You will need to make decisions about what to concentrate on, and what to let slide.  Please document the choices you make.
+The purpose of this exercise is to create the automation to set up as much of a production ready setup as possible for a simple web app.  This exercise, like most things in real life, is at least a little bit time-sensitive.  You will need to make decisions about what to concentrate on, and what to let slide.  **Please document the choices you make.**
 
 <hr/>
 
@@ -58,10 +60,11 @@ Your entire solution should be under source control with reasonable commit messa
 
 Please deploy the Airflow web app (i.e. no need for the scheduler or flower components) together with its necessary dependencies, of a postgres database and redis server.  
 
-* Versions used are up to you.  
+* OS/Application/Database versions used are up to you.  
 * Manner of deployment, so long as it's automated, is up to you.
 * Airflow is a python based app. You can find it on github [here](https://github.com/apache/incubator-airflow).
-* Imagine that there's a risk that we'll have a lot of traffic on this site.
+* Use t2.micro instances where you can, but imagine there's a risk that we'll have a lot of traffic on this site.
+* Please deploy only to the eu-west-1 region.
 
 Airflow itself is not the point here - it's an example of an app that needs a database and some other supporting infrastructure. Feel free to document any oddities you find that you believe need airflow configuration that you choose not to tackle.
 
