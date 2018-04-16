@@ -6,8 +6,7 @@
         <a href=#before-you-start>Before you Start</a> |
         <a href=#homework-goals>Homework Goals</a> |
         <a href=#deliverables>Deliverables</a> |
-        <a href=#the-actual-exercise>Exercise</a> |
-      
+        <a href=#the-actual-exercise>Exercise</a>
     </td>
   </tr>
   <tr>
